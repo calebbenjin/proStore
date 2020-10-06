@@ -1,0 +1,30 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "mern shopping cartApp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calebbenjin/proStore.git"
+  },
+  "author": "Caleb benjin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calebbenjin/proStore/issues"
+  },
+  "homepage": "https://github.com/calebbenjin/proStore#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
